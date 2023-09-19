@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Author: Kristy Joosten
+Author: Kristy
 Script to calculate the rpkm (reads per kilo base per million
 transcripts) and list the top 10 most highly expressed genes.
 usage:python3 Kallisto_parser.py [index_file] [fastq_file]
