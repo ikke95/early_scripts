@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Author: Kristy Joosten
+Author: Kristy
 Script to assess and trim the read quality of a fastq file.
 usage: python3 Assess_qaulity_trimmer.py [fastq_file]
-    P4_tomatosample.fq: string, sample information in fastq format.
+    fastq_file: string, sample information in fastq format.
 """
 # import statements
 from sys import argv
