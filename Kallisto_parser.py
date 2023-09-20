@@ -4,9 +4,9 @@ Author: Kristy
 Script to calculate the rpkm (reads per kilo base per million
 transcripts) and list the top 10 most highly expressed genes.
 usage:python3 Kallisto_parser.py [index_file] [fastq_file]
-    index_file -- _io.TextIOWrapper, binary file that contains \
+    index_file -- text file, binary file that contains \
     index information.
-    fastq_file -- _io.TextIOWrapper, file that contains the reads \
+    fastq_file -- text file, file that contains the reads \
     in fastq format.
 """
 # import statements
@@ -18,12 +18,12 @@ def run_kallisto(index_file, fastq_file):
     """run kallisto through command line
 
     Key arguments:
-        index_file -- _io.TextIOWrapper, binary file that contains \
+        index_file -- open text file, binary file that contains \
         index information.
-        fastq_file -- _io.TextIOWrapper, file that contains the reads \
+        fastq_file -- open text file, file that contains the reads \
         in fastq format.
     Returns:
-        out_kallisto -- _io.TextIOWrapper, lists for each transcript \
+        out_kallisto -- text file, lists for each transcript \
         its length, effective length, estimated counts and tpmw.
     """
     out_kallisto = "abundance.tsv"
@@ -44,7 +44,7 @@ def parse_kallisto(kallisto_file):
     """parses Kallisto file
 
     Key arguments:
-        kallisto_file -- _io.TextIOWrapper, lists for each transcript \
+        kallisto_file -- open text file, lists for each transcript \
         its length, effective length, estimated counts and tpm.
     Returns:
         eff_length -- list, effect length of each transcript
